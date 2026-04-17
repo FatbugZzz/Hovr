@@ -1,0 +1,1 @@
+Herramienta de overlay para mostrar imágenes de referencia, GIFs y notas.

@@ -1,0 +1,7 @@
+Hovr es una utilidad diseñada para mejorar tu flujo de trabajo mediante overlays flotantes. Te permite mantener imágenes de referencia, GIFs animados y notas de texto siempre visibles sobre otras aplicaciones.
+
+Funciones principales:
+- Overlays de Imagen: Mantén tus referencias visuales siempre a la vista.
+- Soporte para GIF: Muestra animaciones de referencia o decorativas.
+- Notas de Texto: Acceso rápido a información importante o recordatorios.
+- Interfaz Limpia: Diseño minimalista que no interfiere con tu trabajo.

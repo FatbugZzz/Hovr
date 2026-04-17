@@ -1,0 +1,1 @@
+A versatile overlay tool to display reference images, GIFs, and text notes.
