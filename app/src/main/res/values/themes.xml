@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        HOVR — Soft Dark Warm
+        ─────────────────────
+        Background:   #1A1612  (negro con tinte marrón cálido)
+        Surface 1:    #242018  (superficie elevada)
+        Surface 2:    #2E2820  (superficie más alta)
+        Border:       #3A3228  (borde sutil)
+        Accent:       #F0A050  (naranja ámbar)
+        Accent 2:     #C8855A  (terracota)
+        Text:         #EDE8DF  (marfil)
+        Text muted:   #8A8070  (gris cálido)
+        Danger:       #E05C5C  (rojo suave)
+    -->
+
+    <style name="Theme.Hovr" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#F0A050</item>
+        <item name="colorPrimaryVariant">#C8855A</item>
+        <item name="colorOnPrimary">#1A1612</item>
+        <item name="colorSurface">#242018</item>
+        <item name="colorOnSurface">#EDE8DF</item>
+        <item name="android:windowBackground">#1A1612</item>
+        <item name="android:statusBarColor">#1A1612</item>
+        <item name="android:navigationBarColor">#1A1612</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+
+</resources>

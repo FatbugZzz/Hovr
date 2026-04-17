@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/card_bg"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/ivThumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="Favorito" />
+
+    <!-- Gradient overlay bottom -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/widget_gradient" />
+
+    <!-- Delete button -->
+    <TextView
+        android:id="@+id/btnDelete"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="5dp"
+        android:text="✕"
+        android:textColor="#E05C5C"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:background="#C01A1612"
+        android:clickable="true"
+        android:focusable="true" />
+
+</FrameLayout>

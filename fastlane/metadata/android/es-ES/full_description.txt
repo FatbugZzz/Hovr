@@ -1,0 +1,19 @@
+Hovr te permite flotar imágenes y GIFs animados por encima de cualquier otra app en tu pantalla.
+
+Abre una imagen desde tu galería o pega una URL, y aparece como una ventana flotante que puedes arrastrar, redimensionar con un pellizco, rotar y controlar — mientras mantienes las otras apps completamente usables por debajo.
+
+Funciones:
+- Hasta 3 overlays simultáneos, cada uno controlable de forma independiente
+- Abre imágenes y GIFs desde la galería o una URL
+- Arrastra, pellizca para redimensionar y rota los overlays
+- Control de velocidad de GIF (0.25× a 4×)
+- Slider de opacidad
+- Bloqueo de posición
+- Modo burbuja — colapsa a un círculo pequeño
+- Oculta la barra con mantener presionado
+- Favoritos e historial
+- Modo nocturno automático
+- Widget de pantalla de inicio
+- Interfaz en español e inglés
+
+Sin anuncios. Sin rastreo. Sin internet necesario para archivos locales.

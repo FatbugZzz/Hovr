@@ -1,0 +1,19 @@
+Hovr lets you float images and animated GIFs on top of any other app on your screen.
+
+Open an image from your gallery or paste a URL, and it appears as a floating window you can drag anywhere, resize with a pinch, rotate, and control — all while keeping your other apps fully usable underneath.
+
+Features:
+- Up to 3 simultaneous overlays, each independently controllable
+- Open images and GIFs from gallery or URL
+- Drag, pinch to resize, and rotate overlays
+- GIF playback speed control (0.25× to 4×)
+- Opacity slider
+- Position lock
+- Bubble mode — collapse to a small circle
+- Hide toolbar with long press
+- Favorites and history
+- Automatic night mode
+- Home screen widget
+- English and Spanish interface
+
+No ads. No tracking. No internet required for local files.

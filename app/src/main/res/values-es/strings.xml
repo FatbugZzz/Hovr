@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hovr</string>
+    <string name="widget_label">Hovr</string>
+    <string name="widget_description">Muestra tu último GIF o imagen favorito. Tócalo para lanzar el overlay directamente.</string>
+
+    <!-- Header -->
+    <string name="label_overlay_viewer">overlay viewer</string>
+    <string name="btn_close">cerrar</string>
+    <string name="btn_gallery">galería</string>
+    <string name="btn_url">url</string>
+
+    <!-- Night mode -->
+    <string name="night_off">🌙  modo nocturno desactivado</string>
+    <string name="night_active">☀  modo nocturno activo — %1$d%%</string>
+    <string name="night_scheduled">🌙  activo desde las %1$02d:00</string>
+    <string name="night_dialog_title">🌙 Modo Nocturno</string>
+    <string name="night_toggle_label">Modo nocturno automático</string>
+    <string name="night_opacity_label">Opacidad nocturna</string>
+    <string name="btn_save">Guardar</string>
+    <string name="btn_cancel">Cancelar</string>
+
+    <!-- Tabs -->
+    <string name="tab_favorites">★  favoritos</string>
+    <string name="tab_history">🕐  recientes</string>
+
+    <!-- Empty states -->
+    <string name="empty_favorites">Sin favoritos aún.\nAbre una imagen y toca ☆ en el overlay.</string>
+    <string name="empty_history">Historial vacío.\nAbre una imagen o GIF para verla aquí.</string>
+
+    <!-- Toasts -->
+    <string name="toast_overlay_launched">✦ Overlay lanzado (máx. 3 simultáneos)</string>
+    <string name="toast_overlays_closed">Todos los overlays cerrados</string>
+    <string name="toast_night_perm_denied">Permiso no concedido</string>
+    <string name="toast_storage_perm_denied">Permiso de almacenamiento necesario</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_overlay_perm_title">Permiso de superposición</string>
+    <string name="dialog_overlay_perm_msg">Hovr necesita \"Mostrar sobre otras apps\".\n\nActívalo en la siguiente pantalla.</string>
+    <string name="dialog_go_to_settings">Ir a ajustes</string>
+    <string name="dialog_clear_history_title">Limpiar historial</string>
+    <string name="dialog_clear_history_msg">¿Eliminar las %1$d entradas del historial?</string>
+    <string name="dialog_clear_history_confirm">Limpiar</string>
+
+    <!-- Language toggle -->
+    <string name="btn_language">EN</string>
+</resources>

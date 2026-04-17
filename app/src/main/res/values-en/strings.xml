@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hovr</string>
+    <string name="widget_label">Hovr</string>
+    <string name="widget_description">Shows your last favorite GIF or image. Tap to launch the overlay directly.</string>
+
+    <!-- Header -->
+    <string name="label_overlay_viewer">overlay viewer</string>
+    <string name="btn_close">close</string>
+    <string name="btn_gallery">gallery</string>
+    <string name="btn_url">url</string>
+
+    <!-- Night mode -->
+    <string name="night_off">🌙  night mode off</string>
+    <string name="night_active">☀  night mode active — %1$d%%</string>
+    <string name="night_scheduled">🌙  active from %1$02d:00</string>
+    <string name="night_dialog_title">🌙 Night Mode</string>
+    <string name="night_toggle_label">Automatic night mode</string>
+    <string name="night_opacity_label">Night opacity</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <!-- Tabs -->
+    <string name="tab_favorites">★  favorites</string>
+    <string name="tab_history">🕐  recent</string>
+
+    <!-- Empty states -->
+    <string name="empty_favorites">No favorites yet.\nOpen an image and tap ☆ on the overlay.</string>
+    <string name="empty_history">History is empty.\nOpen an image or GIF to see it here.</string>
+
+    <!-- Toasts -->
+    <string name="toast_overlay_launched">✦ Overlay launched (max. 3 at once)</string>
+    <string name="toast_overlays_closed">All overlays closed</string>
+    <string name="toast_night_perm_denied">Permission not granted</string>
+    <string name="toast_storage_perm_denied">Storage permission required</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_overlay_perm_title">Overlay permission</string>
+    <string name="dialog_overlay_perm_msg">Hovr needs \"Display over other apps\".\n\nEnable it on the next screen.</string>
+    <string name="dialog_go_to_settings">Go to settings</string>
+    <string name="dialog_clear_history_title">Clear history</string>
+    <string name="dialog_clear_history_msg">Delete %1$d history entries?</string>
+    <string name="dialog_clear_history_confirm">Clear</string>
+
+    <!-- Language toggle -->
+    <string name="btn_language">ES</string>
+</resources>

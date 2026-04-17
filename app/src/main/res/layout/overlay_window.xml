@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/overlay_bg"
+    android:elevation="20dp">
+
+    <!-- ── TOOLBAR ── -->
+    <LinearLayout
+        android:id="@+id/dragHandle"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="4dp"
+        android:background="@drawable/toolbar_bg">
+
+        <!-- Grip + title -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingEnd="4dp">
+
+            <TextView
+                android:id="@+id/tvGripIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⠿"
+                android:textColor="#4A3A2A"
+                android:textSize="14sp"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOVR"
+                android:textColor="#F0A050"
+                android:fontFamily="monospace"
+                android:textSize="10sp"
+                android:letterSpacing="0.3"
+                android:alpha="0.8" />
+        </LinearLayout>
+
+        <!-- Night -->
+        <TextView
+            android:id="@+id/btnNight"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:text="🌙"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:alpha="0.35"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Lock -->
+        <TextView
+            android:id="@+id/btnLock"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:text="🔓"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:alpha="0.35"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Rotate -->
+        <TextView
+            android:id="@+id/btnRotate"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:text="↻"
+            android:textColor="#8A8070"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Bubble -->
+        <TextView
+            android:id="@+id/btnBubble"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:text="⊡"
+            android:textColor="#C8855A"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Expand controls -->
+        <TextView
+            android:id="@+id/btnExpand"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:text="⌄"
+            android:textColor="#6A5A48"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Favorite -->
+        <TextView
+            android:id="@+id/btnFavorite"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:text="☆"
+            android:textColor="#F0A050"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Close -->
+        <TextView
+            android:id="@+id/btnClose"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:text="✕"
+            android:textColor="#E05C5C"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <!-- ── IMAGE / GIF ── -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:contentDescription="Imagen o GIF" />
+
+    <!-- ── CONTROLS PANEL ── -->
+    <LinearLayout
+        android:id="@+id/controlsPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="14dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="14dp"
+        android:background="@drawable/controls_bg"
+        android:visibility="gone">
+
+        <!-- VELOCIDAD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="VELOCIDAD"
+                android:textColor="#4A3A2A"
+                android:fontFamily="monospace"
+                android:textSize="9sp"
+                android:letterSpacing="0.2" />
+
+            <TextView
+                android:id="@+id/tvSpeedLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1×"
+                android:textColor="#F0A050"
+                android:fontFamily="monospace"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekBarSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressTint="#F0A050"
+            android:thumbTint="#F0A050"
+            android:progressBackgroundTint="#3A3228"
+            android:max="4"
+            android:progress="2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="14dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text=".25×" android:textColor="#3A3228" android:fontFamily="monospace" android:textSize="9sp"/>
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text=".5×" android:gravity="center" android:textColor="#3A3228" android:fontFamily="monospace" android:textSize="9sp"/>
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="1×" android:gravity="center" android:textColor="#3A3228" android:fontFamily="monospace" android:textSize="9sp"/>
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="2×" android:gravity="center" android:textColor="#3A3228" android:fontFamily="monospace" android:textSize="9sp"/>
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="4×" android:gravity="end" android:textColor="#3A3228" android:fontFamily="monospace" android:textSize="9sp"/>
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#28302820" android:layout_marginBottom="12dp"/>
+
+        <!-- OPACIDAD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="OPACIDAD"
+                android:textColor="#4A3A2A"
+                android:fontFamily="monospace"
+                android:textSize="9sp"
+                android:letterSpacing="0.2" />
+
+            <TextView
+                android:id="@+id/tvOpacityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                android:textColor="#C8855A"
+                android:fontFamily="monospace"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekBarOpacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressTint="#C8855A"
+            android:thumbTint="#C8855A"
+            android:progressBackgroundTint="#3A3228"
+            android:max="100"
+            android:progress="100" />
+
+        <!-- Hint -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pellizca para redimensionar  •  Mantén para ocultar barra"
+            android:textColor="#2E2820"
+            android:fontFamily="monospace"
+            android:textSize="8sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
