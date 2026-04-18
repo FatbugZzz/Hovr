@@ -4,7 +4,6 @@ plugins {
 }
 
 android {
-    // Cambiado de com.fatbug.hovr a com.fatbug.hovr para coincidir con F-Droid
     namespace 'com.fatbug.hovr'
     compileSdk 35
 
@@ -20,6 +19,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig null  // Ensures unsigned APK is generated for F-Droid
         }
     }
 
@@ -31,8 +31,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    kotlinOptions { 
-        jvmTarget = '1.8' 
+    kotlinOptions {
+        jvmTarget = '1.8'
     }
 }
 
