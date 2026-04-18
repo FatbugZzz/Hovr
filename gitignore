@@ -1,0 +1,18 @@
+# Local configuration (contiene rutas del SDK, nunca subir)
+local.properties
+
+# Build outputs
+build/
+app/build/
+
+# Android Studio
+.idea/
+*.iml
+.DS_Store
+
+# Keystore (seguridad)
+*.jks
+*.keystore
+
+# Gradle cache local (NO gradle.properties — F-Droid lo necesita)
+.gradle/
