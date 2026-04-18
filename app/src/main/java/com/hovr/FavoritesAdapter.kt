@@ -1,11 +1,11 @@
-package com.hovr
+package com.fatbug.hovr
 
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.hovr.databinding.ItemFavoriteBinding
+import com.fatbug.hovr.databinding.ItemFavoriteBinding
 
 class FavoritesAdapter(
     private val items: List<Uri>,

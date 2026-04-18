@@ -1,4 +1,4 @@
-package com.hovr
+package com.fatbug.hovr
 
 import android.app.AlertDialog
 import android.content.ClipboardManager

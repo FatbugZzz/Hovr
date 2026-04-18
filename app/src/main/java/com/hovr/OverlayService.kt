@@ -1,4 +1,4 @@
-package com.hovr
+package com.fatbug.hovr
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -22,14 +22,14 @@ import android.view.WindowManager
 import android.widget.ImageView
 import android.widget.SeekBar
 import androidx.core.app.NotificationCompat
-import com.hovr.databinding.OverlayWindowBinding
+import com.fatbug.hovr.databinding.OverlayWindowBinding
 
 class OverlayService : Service() {
 
     companion object {
         const val EXTRA_URI      = "extra_uri"
         const val EXTRA_URL      = "extra_url"
-        const val ACTION_CLOSE_ALL = "com.hovr.CLOSE_ALL"
+        const val ACTION_CLOSE_ALL = "com.fatbug.hovr.CLOSE_ALL"
 
         private const val CHANNEL_ID     = "hovr_overlay"
         private const val NOTIF_ID       = 1

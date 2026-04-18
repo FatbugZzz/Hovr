@@ -1,4 +1,4 @@
-package com.hovr
+package com.fatbug.hovr
 
 import android.Manifest
 import android.content.Context
@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.hovr.databinding.ActivityMainBinding
+import com.fatbug.hovr.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

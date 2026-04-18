@@ -1,4 +1,4 @@
-package com.hovr
+package com.fatbug.hovr
 
 import android.graphics.BitmapFactory
 import android.net.Uri
@@ -8,7 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.hovr.databinding.ItemHistoryBinding
+import com.fatbug.hovr.databinding.ItemHistoryBinding
 
 class HistoryAdapter(
     private val items: List<HistoryManager.HistoryEntry>,

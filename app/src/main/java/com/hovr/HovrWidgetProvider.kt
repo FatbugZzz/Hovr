@@ -1,4 +1,4 @@
-package com.hovr
+package com.fatbug.hovr
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -33,9 +33,9 @@ class HovrWidgetProvider : AppWidgetProvider() {
 
     companion object {
         /** Broadcast to force-refresh all Anima widgets */
-        const val ACTION_FAVORITES_CHANGED = "com.hovr.ACTION_FAVORITES_CHANGED"
-        const val ACTION_WIDGET_REFRESH    = "com.hovr.ACTION_WIDGET_REFRESH"
-        const val ACTION_LAUNCH_OVERLAY    = "com.hovr.ACTION_LAUNCH_OVERLAY"
+        const val ACTION_FAVORITES_CHANGED = "com.fatbug.hovr.ACTION_FAVORITES_CHANGED"
+        const val ACTION_WIDGET_REFRESH    = "com.fatbug.hovr.ACTION_WIDGET_REFRESH"
+        const val ACTION_LAUNCH_OVERLAY    = "com.fatbug.hovr.ACTION_LAUNCH_OVERLAY"
         const val EXTRA_WIDGET_URI         = "widget_uri"
 
         /**

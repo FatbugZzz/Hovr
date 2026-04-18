@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    // Cambiado de com.hovr a com.fatbug.hovr para coincidir con F-Droid
+    // Cambiado de com.fatbug.hovr a com.fatbug.hovr para coincidir con F-Droid
     namespace 'com.fatbug.hovr'
     compileSdk 35
 
