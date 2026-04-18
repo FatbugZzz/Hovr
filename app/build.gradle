@@ -4,11 +4,12 @@ plugins {
 }
 
 android {
-    namespace 'com.hovr'
+    // Cambiado de com.hovr a com.fatbug.hovr para coincidir con F-Droid
+    namespace 'com.fatbug.hovr'
     compileSdk 35
 
     defaultConfig {
-        applicationId "com.hovr"
+        applicationId "com.fatbug.hovr"
         minSdk 26
         targetSdk 35
         versionCode 1
@@ -30,7 +31,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    kotlinOptions { jvmTarget = '1.8' }
+    kotlinOptions { 
+        jvmTarget = '1.8' 
+    }
 }
 
 dependencies {
