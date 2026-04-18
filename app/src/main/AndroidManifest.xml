@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hovr">
+    package="com.fatbug.hovr">
 
-    <!-- Overlay: show above all other apps -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
-    <!-- Internet: required for loading images/GIFs from URLs -->
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <!-- Storage -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"
         android:minSdkVersion="33" />
 
-    <!-- Foreground service -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
-    <!-- Widget: restore after reboot -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
@@ -30,18 +25,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hovr">
 
-        <!-- ── Main launcher activity ── -->
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:windowSoftInputMode="stateHidden">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <!-- ── Foreground service: hosts the overlay window ── -->
         <service
             android:name=".OverlayService"
             android:exported="false"
@@ -51,25 +43,21 @@
                 android:value="Overlay viewer for images and GIFs" />
         </service>
 
-        <!-- ── Home screen widget ── -->
         <receiver
             android:name=".HovrWidgetProvider"
             android:exported="true"
             android:label="@string/widget_label">
 
-            <!-- Standard widget update broadcast -->
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
 
-            <!-- Custom broadcasts for favorites changes and overlay launch -->
             <intent-filter>
-                <action android:name="com.hovr.ACTION_FAVORITES_CHANGED" />
-                <action android:name="com.hovr.ACTION_WIDGET_REFRESH" />
-                <action android:name="com.hovr.ACTION_LAUNCH_OVERLAY" />
+                <action android:name="com.fatbug.hovr.ACTION_FAVORITES_CHANGED" />
+                <action android:name="com.fatbug.hovr.ACTION_WIDGET_REFRESH" />
+                <action android:name="com.fatbug.hovr.ACTION_LAUNCH_OVERLAY" />
             </intent-filter>
 
-            <!-- Restore widget state after reboot -->
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
